@@ -1,0 +1,28 @@
+local player = game.Players.LocalPlayer
+    if player.UserId == 4636830533 or player.UserId == 4636825706 then -- administrators
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/lolpoppyus/Roblox-Lua/master/Pop%20UI%20Lib", true))()
+
+local ui = library:Tab("Server Breaker")
+
+ui:Button("Method 1", function()
+    for i = 1, 50 do game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("MalevolentShrine"):FireServer() end
+end)
+
+ui:Button("Method 2", function()
+    local args = {     [1] = "Shadow" }  game:GetService("ReplicatedStorage"):WaitForChild("Picked"):FireServer(unpack(args))  wait(0.2)  local LP = game.Players.LocalPlayer repeat wait() until LP.Character for i,v in pairs(LP.Backpack:GetChildren()) do    if v.Name == "All Range Atomic" or v.Name == "AtomicFolder" then        v.Parent = LP.Character    end end  for i = 1, 250 do task.wait() game:GetService("ReplicatedStorage"):WaitForChild("AtomicFolder"):WaitForChild("Event"):FireServer() end
+end)
+
+ui:Button("Method 3", function()
+    for i = 1, 100 do a = math.random(-200, 200) b = math.random(-10, 20) c = math.random(-200, 200) local args = {     [1] = Vector3.new(a, b, c) }  game:GetService("Players").LocalPlayer.Character:FindFirstChild("Summon Mahoraga").Use.RemoteEvent:FireServer(unpack(args)) end
+end)
+  end
+  
+  local player = game.Players.LocalPlayer
+    if player.UserId == not 4636830533 or player.UserId == not 4636825706 then
+        OrionLib:MakeNotification({
+	Name = "Budgie Hub",
+	Content = "Insufficient rights, need to meet with administrator",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+    end
