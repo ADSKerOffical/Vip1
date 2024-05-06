@@ -1,5 +1,12 @@
 local player = game.Players.LocalPlayer
-    if player.UserId == 4636830533 or player.UserId == 4636825706 or player.UserId == 2207167228 then
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))()
+    if player.UserId == 4636830533 or player.UserId == 4636825706 or player.UserId == 2207167228 or player.UserId == 5864620643 then
+OrionLib:MakeNotification({
+	Name = "Budgie Hub",
+	Content = "Congratulations - you were able to meet the administrator of this hub and therefore this function became available to you",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/lolpoppyus/Roblox-Lua/master/Pop%20UI%20Lib", true))()
 
 local ui = library:Tab("Server Breaker")
@@ -18,7 +25,7 @@ end)
   end
   
   local player = game.Players.LocalPlayer
-    if player.UserId == not 4636830533 or player.UserId == not 4636825706 then
+    if player.UserId not == 4636830533 or player.UserId not == 4636825706 or player.UserId not == 2207167228 or player.UserId not == 5864620643 then
         OrionLib:MakeNotification({
 	Name = "Budgie Hub",
 	Content = "Insufficient rights, need to meet with administrator",
