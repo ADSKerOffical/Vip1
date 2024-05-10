@@ -1,6 +1,6 @@
 local player = game.Players.LocalPlayer
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))()
-    if player.UserId == 4636830533 or player.UserId == 4636825706 or player.UserId == 2207167228 or player.UserId == 5864620643 then
+    if player.UserId == 4636830533 or player.UserId == 4636825706 or player.UserId == 2207167228 or player.UserId == 5864620643 or player.UserId == 5042713445 then
 OrionLib:MakeNotification({
 	Name = "Budgie Hub",
 	Content = "Congratulations - you were able to meet the administrator of this hub and therefore this function became available to you",
@@ -25,7 +25,7 @@ end)
   end
   
   local player = game.Players.LocalPlayer
-    if player.UserId == not 4636830533 or player.UserId == not 4636825706 or player.UserId == not 2207167228 or player.UserId == not 5864620643 then
+    if player.UserId == not 4636830533 or player.UserId == not 4636825706 or player.UserId == not 2207167228 or player.UserId == not 5864620643 or player.UserId == not 5042713445 then
         OrionLib:MakeNotification({
 	Name = "Budgie Hub",
 	Content = "Insufficient rights, need to meet with administrator",
